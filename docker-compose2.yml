@@ -13,7 +13,7 @@ services:
     - 8200:8200
     networks:
     - elastic
-    command: >
+    command: > 
        apm-server -e
          -E apm-server.rum.enabled=true
          -E setup.kibana.host=kibana:5601
